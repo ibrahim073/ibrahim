@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+<style>
+    .box {
+        height: 300px;
+        width: 300px;
+        background-color: red;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        font-weight: bolder;
+        font-size: 30px;
+        border: solid black;
+        border-radius: 5px;
+    }
+
+    #box {
+        display: flex;
+        justify-content: center;
+        margin-top: 150px;
+    }
+
+    .info {
+        text-align: center;
+        margin: 20px;
+        font-size: 18px;
+
+        
+    }
+
+    @media (min-width: 0px) and (max-width: 768px) {
+        .box {
+
+            background-color: aqua;
+        }
+    }
+
+    @media (min-width:769px) and (max-width:1024px) {
+        .box {
+
+            background-color: blueviolet;
+        }
+    }
+
+    @media (min-width: 1025px) {
+        .box {
+
+            background-color: yellow;
+        }
+    }
+</style>
+
+<body>
+    <div id="box">
+        <div class="box">
+            responsive box
+        </div>
+    </div>
+</body>
+
+</html>

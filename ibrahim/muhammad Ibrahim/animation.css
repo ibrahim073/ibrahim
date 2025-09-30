@@ -1,0 +1,37 @@
+.btn{
+    width: 70px;
+    height: 40px;
+    background-color: aqua;
+    animation: button 2s ease-in-out infinite;
+}
+@keyframes button{
+    from{
+        background-color: aqua;
+    }
+    to{
+        background-color: blue;
+    }
+}
+.animation{
+    width: 250px;
+    height: 150px;
+    background-color:limegreen ;
+    animation: slide 4s ease-in infinite;
+}
+@keyframes slide{
+    0%{transform: translateX(0px);background-color: blue;}
+    100%{transform: translateX(800px); background-color: brown;}
+}
+.rotate{
+    rotate: slide 4s ease-in;
+}
+@keyframes slide{
+    0%{transform: rotateX(0deg);background-color: burlywood;}
+    100%{transform: rotateX(360deg);background-color: cadetblue;}
+}
+
+
+
+
+
+

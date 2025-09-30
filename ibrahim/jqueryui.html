@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery UI Example</title>
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  
+  <style>
+    #dragme {
+      width: 100px;
+      height: 100px;
+      background-color: brown;
+      cursor: grab;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <p>Date: <input type="text" id="date"></p>
+
+  <div id="dragme"></div>
+
+  <div id="faq">
+    <h3>What service do you offer?</h3>
+    <div>We provide web design, SEO, and marketing.</div>
+    <h3>How can I contact you?</h3>
+    <div>You can use our form or call us anytime.</div>
+  </div>
+
+  <script>
+    $(function () {
+      $("#date").datepicker();
+
+      $("#dragme").draggable();
+
+      $("#faq").accordion();
+    });
+  </script>
+
+</body>
+</html>

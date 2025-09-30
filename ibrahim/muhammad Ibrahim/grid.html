@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+    .container{
+        display: grid;
+        gap: 30px;
+        grid-template-columns:300px 300px 300px  ;
+        grid-template-rows:100px 300px 100px  ;
+        grid-template-areas:"header header header" 
+                             "sidebar main main"
+                              "footer footer footer";
+    }    
+    .header{
+        grid-area: header;
+        background-color: aqua;
+    }
+    .sidebar{
+        grid-area: sidebar;
+        background-color: blue;
+    }
+    .main{
+        grid-area: main;
+        background-color: brown;
+    }
+    .footer{
+        grid-area: footer;
+        background-color: cadetblue;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="header">this is a header</div>
+    <div class="sidebar">this ia a sidebar</div>
+    <div class="main">this is main</div>
+    <div class="footer">this is a footer</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FETCH JSON EXAMPLE</title>
+</head>
+<body>
+    <h2>Student List fetchapi</h2>
+    <ul id="studentlist"></ul>
+
+
+    <h2>Student Table fetchapi</h2>
+  <table border="1" id="studenttable">
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Course</th>
+    </tr>
+  </table>
+
+  <script>
+    fetch("student.json")
+    .then(response => response.json())
+    .then(data =>{
+
+        let list = document.getElementById("studentlist");
+        data.forEach(student => {
+            let li = document.createElement("li");
+            li.textContent = student.name + " - " + student.course;
+            list.appendChild(li);
+        });
+
+        let table = document.getElementById("studenttable")
+        data.forEach(student =>{
+          let row = table.insertRow();
+          row.insertCell(0).innerText = student.name;
+          row.insertCell(1).innerText = student.age;
+          row.insertCell(2).innerText = student.course;
+        });
+    } )
+        .catch(error => console.log("Error: " + error));
+
+  </script>
+</body>
+</html>

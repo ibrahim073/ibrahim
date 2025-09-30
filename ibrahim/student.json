@@ -1,0 +1,5 @@
+[
+    {"name" : "Abbas", "age" : "21" , "course" : "Web Development"},
+    {"name" : "Azhar", "age" : "22" , "course" : "Ai"},
+    {"name" : "Ali", "age" : "23" , "course" : "Data Science"}
+]

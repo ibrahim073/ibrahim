@@ -1,0 +1,35 @@
+.side{
+width: 200px;
+height: 100%;
+position: fixed;
+left: 0px;
+top: 0px;
+background-color: rgb(190, 18, 104);
+padding: 0px;
+color: beige;
+box-sizing: border-box;
+}
+.side-bar{
+display: flex;
+flex-direction: column;
+}
+.ul-list{
+list-style: none;
+padding: 0px;
+margin: 0px;
+}
+.sidebar-links{
+text-decoration: none;
+color: rgb(136, 136, 136);
+font-weight: bold;
+display: block;
+border-radius: 4px;
+font-size: larger;
+}
+main{
+    margin-left: 250px;
+    
+}
+.img{
+    height: 100dvh;
+}

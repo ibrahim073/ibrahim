@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+
+    <style>
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+<body>
+
+    <h1 id="main-title">highlights Title</h1>
+    <p class="info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+    <p>culpa eum? Voluptatibus praesentium architecto harum iure cupiditate.</p>
+    <button id="btn-id">Highlight Title</button>
+    <button id="btn-class">Highlight Info Paragraph</button>
+    <button id="btn-tag">Hide all Paragraph</button>
+
+<script>
+
+        $(document).ready(function () {
+
+            $("#btn-id").click(function () {
+                $("#main-title").toggleClass("highlight");
+            });
+
+
+            $("#btn-class").click(function () {
+                $(".info").toggleClass("highlight");
+            });
+
+
+            $("#btn-tag").click(function () {
+                $("p").hide();
+            });
+
+        } );
+    </script>
+</body>
+
+
+
+</html>
